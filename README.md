@@ -25,6 +25,7 @@ We used **three classifiers** and focused on **probability calibration**:
 1. **Logistic Regression**  
    - Baseline model  
    - Naturally well-calibrated under linear assumptions
+   - SMOTE processing for imbalanced data set
 
 2. **AdaBoostClassifier**  
    - Robust ensemble method  
