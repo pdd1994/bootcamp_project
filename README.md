@@ -47,6 +47,7 @@ We used **three classifiers** and focused on **probability calibration**:
 | Model              | ROC AUC |
 |--------------------|---------|
 | Logistic Regression| 0.56    |
+| Logistic Regression with SMTOE| 0.54    |
 | AdaBoost           | 0.54    |
 | Calibrated XGBoost | 0.54    |
 
@@ -74,6 +75,7 @@ Logistic Regression was closest to the **perfect calibration line**, followed by
 
 ##  Summary of Implications
 - **Logistic Regression** provides a strong calibrated baseline and is suitable for **interpretable risk scoring**
+- **Logistic Regression with SMOTE** has a lower predicted probabilities and are more spread out. This suggests the model is less certain
 - **AdaBoost** improves robustness but requires careful **post-hoc calibration** to be useful for probability interpretation
 - **XGBoost**, although powerful, outputs **overconfident predictions** unless calibrated. With **Platt scaling**, its performance aligns with Logistic Regression.
 
